@@ -1,0 +1,1526 @@
+/mnt # ./rtsp0106 
+RTSP server START
+
+        hostname is: (none)
+        rtsp listening port is: 554
+        Input rtsp://hostIP:554/test.264 to play this
+
+listen for client connecting...
+The pthread schedule_do start
+s32ChnNum = 1
+=============SAMPLE_COMM_VI_SetMipiAttr enWDRMode: 0
+linear mode
+Aptina AR0130 sensor 720P30fps init success!
+
+ff=0
+in sps
+a=000
+
+ff=0
+x=0xb6de801a 0  0  0  1  68  ce  3c  80 
+y=0xb6de8022 0  0  0  0  0  0  0  0 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=000
+
+ff=0
+x=0xb61f401a 0  0  0  1  68  ce  3c  80 
+y=0xb61f4022 0  0  0  0  0  0  0  0 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=a15e17
+
+ff=0
+x=0xb62c001a 0  0  0  1  68  ce  3c  80 
+y=0xb62c0022 f8  67  6f  fb  b7  5f  f6  c2 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=9e87f8
+
+ff=0
+x=0xb638c01a 0  0  0  1  68  ce  3c  80 
+y=0xb638c022 f8  4c  fb  6d  f7  f8  83  53 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=87c827
+
+ff=0
+x=0xb645801a 0  0  0  1  68  ce  3c  80 
+y=0xb6458022 fe  3e  33  8a  2f  a5  a5  fb 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=ddd3f
+
+ff=0
+x=0xb652401a 0  0  0  1  68  ce  3c  80 
+y=0xb6524022 f8  46  8f  e8  af  f7  8  6b 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=AddClient, 125
+Incoming RTSP connection accepted on socket: 17
+EventLoop Connection reached: 3
+192.168.1.101 Port:18069
+INPUT_BUFFER was:OPTIONS rtsp://192.168.1.10/test.264 RTSP/1.0
+CSeq: 2
+User-Agent: LibVLC/2.2.6 (LIVE555 Streaming Media v2016.02.22)
+
+
+0rtsp_tracepoint: rtspservice.c,RTSP_state_machine,1387
+state_machine:current state is  init state
+current method code is:  3  
+OPTIONS rtsp://192.168.1.10/test.264 RTSP/1.0 
+(Send to client:)
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS,DESCRIBE,SETUP,PLAY,PAUSE,TEARDOWN
+
+
+leaving rtsp_state_machine!
+exit Rtsp_state_machine
+4
+5
+
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=4a20ae
+
+ff=0
+x=0xb65f001a 0  0  0  1  68  ce  3c  80 
+y=0xb65f0022 bf  c4  63  42  4b  cf  f2  6f 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=faae22
+
+ff=0
+x=0xb66bc01a 0  0  0  1  68  ce  3c  80 
+y=0xb66bc022 5b  d5  cd  d7  fc  91  14  ff 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=192.168.1.101 Port:18069
+INPUT_BUFFER was:DESCRIBE rtsp://192.168.1.10/test.264 RTSP/1.0
+CSeq: 3
+User-Agent: LibVLC/2.2.6 (LIVE555 Streaming Media v2016.02.22)
+Accept: application/sdp
+
+
+0rtsp_tracepoint: rtspservice.c,RTSP_state_machine,1387
+state_machine:current state is  init state
+current method code is:  0  
+
+
+GetSdpDescr,668===>psp.base64profileid=faae22,psp.base64sps=3/quIr7FqrNb,psp.base64pps=W9XN1/==
+
+(Send to client:)
+RTSP/1.0 200 OK
+CSeq: 3
+Server: sunshine/1.11
+Date: Fri, 06 Jan 2017 21:07:42 GMT
+Content-Type: application/sdp
+Content-Base: rtsp://192.168.1.10/test.264/
+Content-Length: 290
+
+v=0
+o=-3692725504 3692725504 IN IP4 192.168.1.10
+s=Unnamed
+i=N/A
+c=IN IP4 192.168.1.101
+t=0 0
+a=recvonly
+m=video 5004 RTP/AVP 96
+b=RR:0
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;profile-level-id=faae22;sprop-parameter-sets=3/quIr7FqrNb,W9XN1/==;
+a=control:trackID=0
+
+leaving rtsp_state_machine!
+exit Rtsp_state_machine
+4
+5
+
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=e1332d
+
+ff=0
+x=0xb678801a 0  0  0  1  68  ce  3c  80 
+y=0xb6788022 ea  7d  71  e6  49  bc  3c  92 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=7b35bc
+
+ff=0
+x=0xb685401a 0  0  0  1  68  ce  3c  80 
+y=0xb6854022 9e  e4  af  d4  46  fb  ff  27 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=192.168.1.101 Port:18069
+INPUT_BUFFER was:SETUP rtsp://192.168.1.10/test.264/trackID=0 RTSP/1.0
+CSeq: 4
+User-Agent: LibVLC/2.2.6 (LIVE555 Streaming Media v2016.02.22)
+Transport: RTP/AVP;unicast;client_port=5004-5005
+
+
+0rtsp_tracepoint: rtspservice.c,RTSP_state_machine,1387
+state_machine:current state is  init state
+current method code is:  8  
+*** transport: RTP/AVP;unicast;client_port=5004-5005 ***
+
+ff=0
+ff=0
+ff=0<><><><>success creat RTP<><><><>
+<><><><>Creat RTP<><><><>
+pstr=-5005
+**adding a schedule object action rtsputils.c,343**
+(Send to client:)
+RTSP/1.0 200 OK
+CSeq: 4
+Server: sunshine/1.11
+Date: Fri, 06 Jan 2017 21:07:44 GMT
+Session: 206571
+Transport: RTP/AVP;unicast;client_port=5004-5005;destination=192.168.245.65;source=192.168.245.96;server_port=5004-5005
+
+
+TRANSFER TO READY STATE!
+leaving rtsp_state_machine!
+exit Rtsp_state_machine
+4
+5
+
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=a0ae74
+
+ff=0
+x=0xb692001a 0  0  0  1  68  ce  3c  80 
+y=0xb6920022 5e  28  cb  e8  7f  62  2d  fb 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=cbc9a7
+
+ff=0
+x=0xb69ec01a 0  0  0  1  68  ce  3c  80 
+y=0xb69ec022 75  31  bf  11  8b  d3  a5  e3 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=192.168.1.101 Port:18069
+INPUT_BUFFER was:PLAY rtsp://192.168.1.10/test.264/ RTSP/1.0
+CSeq: 5
+User-Agent: LibVLC/2.2.6 (LIVE555 Streaming Media v2016.02.22)
+Session: 206571
+Range: npt=0.000-
+
+
+0rtsp_tracepoint: rtspservice.c,RTSP_state_machine,1387
+state_machine:current state is  ready state
+current method code is:5
+        +++++++++++++++++++++
+        start to play 0 now!
+        +++++++++++++++++++++
+(Send to client:)
+RTSP/1.0 200 OK
+CSeq: 5
+Server: sunshine/1.11
+Date: Fri, 06 Jan 2017 21:07:46 GMT
+Session: 206571
+
+
+        Start Playing!
+leaving rtsp_state_machine!
+exit Rtsp_state_machine
+4
+5
+
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=d68dae
+
+ff=0
+x=0xb6ab801a 0  0  0  1  68  ce  3c  80 
+y=0xb6ab8022 3a  5  f9  69  f1  dd  9c  86 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=61fee9
+
+ff=0
+x=0xb6b8401a 0  0  0  1  68  ce  3c  80 
+y=0xb6b84022 6b  f8  8d  7  df  f1  37  ef 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=7dfdc1
+
+ff=0
+x=0xb6c5001a 0  0  0  1  68  ce  3c  80 
+y=0xb6c50022 dc  41  b7  ed  fc  55  ff  4f 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=1eeff9
+
+ff=0
+x=0xb6d1c01a 0  0  0  1  68  ce  3c  80 
+y=0xb6d1c022 9d  27  5f  7c  26  7d  da  7d 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=998191
+
+ff=0
+x=0xb6de801a 0  0  0  1  68  ce  3c  80 
+y=0xb6de8022 8d  9c  2e  2c  bb  1b  9f  1b 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=7d987
+
+ff=0
+x=0xb61f401a 0  0  0  1  68  ce  3c  80 
+y=0xb61f4022 6  11  47  61  2b  47  7a  6f 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=dfae0
+
+ff=0
+x=0xb62c001a 0  0  0  1  68  ce  3c  80 
+y=0xb62c0022 2f  13  38  7c  31  28  57  9 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=891e89
+
+ff=0
+x=0xb638c01a 0  0  0  1  68  ce  3c  80 
+y=0xb638c022 97  70  72  6  a2  7a  f0  88 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+                h264nalu
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+                h264nalu
+ff=0
+in sps
+a=76c562
+
+ff=0
+x=0xb645801a 0  0  0  1  68  ce  3c  80 
+y=0xb6458022 71  77  45  5c  33  82  90  d0 
+in pps
+ff=0
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=7789c4
+
+ff=0
+x=0xb652401a 0  0  0  1  68  ce  3c  80 
+y=0xb6524022 88  91  8d  c4  e  76  15  d2 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=f8dc1a
+
+ff=0
+x=0xb65f001a 0  0  0  1  68  ce  3c  80 
+y=0xb65f0022 c6  8e  df  ff  a3  f0  ae  a 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+in sps
+a=5319f7
+
+ff=0
+x=0xb66bc01a 0  0  0  1  68  ce  3c  80 
+y=0xb66bc022 8c  48  e4  2b  38  50  7d  ff 
+in pps
+ff=0
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+in sps
+a=89cde2
+
+ff=0
+x=0xb678801a 0  0  0  1  68  ce  3c  80 
+y=0xb6788022 e2  75  89  c5  38  9f  13  ac 
+in pps
+ff=0
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+                h264nalu
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+in sps
+a=3b513d
+
+ff=0
+x=0xb685401a 0  0  0  1  68  ce  3c  80 
+y=0xb6854022 ab  93  5c  dc  4e  c7  f7  27 
+in pps
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0The pthread schedule_do end
+
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0
+ff=0begin free mem
+The Server quit!
