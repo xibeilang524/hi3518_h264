@@ -1,0 +1,58 @@
+0x67 A&0x1f==7:sps
+0x68 A&0x1f==8:pps
+0x65 A&0x1f==5:关键帧
+0xZ1 A&0x1f==1:非关键帧
+
+stStream.u32PackCount	一帧流里有u32PackCount个h264包(可能是nalu单元，未确定)，以数组形式保存
+stStream.pstPack[u32PackIndex].pu8Addr	一帧流里第u32PackIndex个包的虚拟首地址
+stStream.pstPack[u32PackIndex].u32Len	一帧流里第u32PackIndex个包的长度，即包大小，单位为字节
+stStream.pstPack[u32PackIndex].u32Offset	一帧流里第u32PackIndex个包中有效数据与第u32PackIndex个包首地址pu8Addr的偏移，一般为0
+
+包长是包含00 00 00 01
+
+log20171229103150.h264是数据文件，用ultraedit打开，直观明了
+log20171229103150_data.txt是数据文件转化的，以便于在notepad里查找数据
+log20171229103150_printf.txt是程序运行打印出来的包信息
+看log20171229103150_printf.txt第一个帧有4个包，所以stStream.u32PackCount=4；
+第一个包的虚拟首地址为stStream.pstPack[0].pu8Addr=0xb68c4040,
+有效数据紧跟在首地址后面，所以偏移stStream.pstPack[0].u32Offset=0，
+第一个大小为stStream.pstPack[0].u32Len=18，所以在log20171229103150.h264数据文件里看，第一个包的00 00 00 01在
+0x00000000处，那么第二个包在0x00000000+18=0x00000012处，看数据文件，果然第二个00 00 00 01在0x00000012处
+第一帧的第4个包大小为stStream.pstPack[3].u32Len=3620，其开始位置为0x00000023+3620=0x00000e47,看数据文件，果然
+下一个00 00 00 01在0x00000e47处。当然在0x00000e47处的包是属于第二个帧了。
+经过比较发现，有stStream.u32PackCount=4共有13处，然后用H264查看工具eseye_u.exe查看log20171229103150.h264发现有
+13个红块。说明这个视频总共有13个帧。红块是I帧
+
+视频：1280*720
+
+http://blog.csdn.net/yangzhongxuan/article/details/8003494
+H264结构中，一个视频图像编码后的数据叫做一帧，一帧由一个片（slice）或多个片组成，一个片由一个或多个
+宏块（MB）组成，一个宏块由16x16的yuv数据组成。宏块作为H264编码的基本单位。
+片又分为I片、B片、P片
+http://blog.csdn.net/tkp2014/article/details/47029807
+H264编码过程中的三种不同的数据形式：
+	SODB        数据比特串 ----＞最原始的编码数据，即VCL数据
+	RBSP　     原始字节序列载荷 ----＞在SODB的后面填加了结尾比特（RBSP trailing bits　一个bit“1”）若干比特“0”,以便字节对齐；
+	EBSP　     扩展字节序列载荷 ---- >在RBSP加StartCode及防竞争码0x03
+	SODB  + RBSP trailing bits    =  RBSP
+    NAL header(1 byte)+RBSP   = NALU
+    Start Code Prefix(3bytes) + NALU+Start Code Prefix(3 bytes)  +   NALU   + ...+  = H.264BitsStream
+	h264的功能分为两层，视频编码层（VCL）和网络提取层（NAL）
+		一个原始的H.264 NALU 单元常由 [StartCode] [NALU Header] [NALU Payload] 三部分组成
+		StartCode:00 00 00 01
+		NAL Header：占一个字节，由三部分组成forbidden_bit(1bit)，nal_reference_bit(2bits)（优先级），nal_unit_type(5bits)（类型）
+			最高bit为forbidden_bit，低5bit为nal类型，剩下两bit为优先级
+如：00 00 00 01 67 42 00 1F 9D A8 14 01 6E 9B 80 80 80 81
+	StartCode为00 00 00 01
+	NAL为67 42 00 1F 9D A8 14 01 6E 9B 80 80 80 81
+		NAL头为67
+		RBSP为42 00 1F 9D A8 14 01 6E 9B 80 80 80 81
+H264在网络传输的是NALU
+完成视频的解码，不仅需要传输VCL层编码出来的视频帧数据，还需要传输序列参数集SPS、图像参数集PPS等数据。
+ IDR 图像一定是 I 图像，但 I 图像不一定是 IDR 图像。I帧之后的图像有可能会使用I帧之前的图像做运动参考。
+
+h264的功能分为两层，视频编码层（VCL）和网络提取层（NAL）
+一个原始的H.264 NALU 单元常由 [StartCode] [NALU Header] [NALU Payload] 三部分组成
+StartCode:00 00 00 01
+ NAL Header：占一个字节，由三部分组成forbidden_bit(1bit)，nal_reference_bit(2bits)（优先级），nal_unit_type(5bits)（类型）
+			最高bit为forbidden_bit，低5bit为nal类型，剩下两bit为优先级
