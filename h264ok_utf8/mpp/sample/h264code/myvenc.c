@@ -1,3 +1,7 @@
+/*
+*Lucifer
+*QQ:398031055
+*/
 #ifdef __cplusplus
 #if __cplusplus
 extern "C"{
