@@ -231,29 +231,29 @@ ff=0
 ff=0
 ff=0
 ff=0
-ff=AddClient, 125
+ff=AddClient, 125/////////////////////////////////////打印时可能会是fprintf(stderr, "%s, %d\n", __FUNCTION__, __LINE__);这样打印函数名和行号
 Incoming RTSP connection accepted on socket: 17
 EventLoop Connection reached: 3
-192.168.1.101 Port:18069
-INPUT_BUFFER was:OPTIONS rtsp://192.168.1.10/test.264 RTSP/1.0
-CSeq: 2
-User-Agent: LibVLC/2.2.6 (LIVE555 Streaming Media v2016.02.22)
+192.168.1.101 Port:18069////////////////////////////////////////tcp_read函数里177行
+INPUT_BUFFER was:OPTIONS rtsp://192.168.1.10/test.264 RTSP/1.0////////////////////////////////RtspServer函数1714行
+CSeq: 2////////////////////////////////RtspServer函数1714行
+User-Agent: LibVLC/2.2.6 (LIVE555 Streaming Media v2016.02.22)////////////////////////////////RtspServer函数1714行
 
 
-0rtsp_tracepoint: rtspservice.c,RTSP_state_machine,1387
-state_machine:current state is  init state
-current method code is:  3  
-OPTIONS rtsp://192.168.1.10/test.264 RTSP/1.0 
-(Send to client:)
-RTSP/1.0 200 OK
-CSeq: 2
-Public: OPTIONS,DESCRIBE,SETUP,PLAY,PAUSE,TEARDOWN
+0rtsp_tracepoint: rtspservice.c,RTSP_state_machine,1387////////////////RTSP_state_machine函数1368行
+state_machine:current state is  init state////////////////RTSP_state_machine函数1416行
+current method code is:  3  ////////////////RTSP_state_machine函数1427行
+OPTIONS rtsp://192.168.1.10/test.264 RTSP/1.0 /////////////////////////////RTSP_options函数888行
+(Send to client:)/////////////////////////////////////bwrite函数385行
+RTSP/1.0 200 OK///////////send_options_reply里填充，然后在bwrite打印
+CSeq: 2///////////send_options_reply里填充，然后在bwrite打印
+Public: OPTIONS,DESCRIBE,SETUP,PLAY,PAUSE,TEARDOWN///////////send_options_reply里填充，然后在bwrite打印
 
 
-leaving rtsp_state_machine!
-exit Rtsp_state_machine
-4
-5
+leaving rtsp_state_machine!///////////////////RTSP_state_machine函数1569行
+exit Rtsp_state_machine///////////////////RTSP_handler函数1631行
+4///////////////////RTSP_handler函数1635行
+5//////////////////RtspServer函数1738行
 
 ff=0
 ff=0
@@ -580,7 +580,12 @@ CSeq: 5
 Server: sunshine/1.11
 Date: Fri, 06 Jan 2017 21:07:46 GMT
 Session: 206571
-
+//////////////////////////////////////////这里以后就没有RTSP包了，就是服务器发H264包给客户端，客户端也没响应，
+//直到客户端结束播放，发送RTSP的TEARDOWN
+//播放过程：在SAMPLE_COMM_VENC_GetVencStreamProc函数里调用HisiPutH264DataToBuffer将数据流保存到ringfifo[iput].buffer里，
+//然后在schedule_do线程里调用ringget(&ringinfo)读取数据流，然后对数据流添加时间戳等组成一个包用sched[i].play_action发送
+//出去(sched[i].play_action是函数指针，实际上调用的是RtpSend函数(RtpSend-->SendNalu264-->sendto(socket里的发送函数),即
+//RtpSend最终调用了sendto(socket里的发送函数)函数))
 
         Start Playing!
 leaving rtsp_state_machine!
@@ -1511,7 +1516,7 @@ ff=0
 ff=0
 ff=0
 ff=0
-ff=0The pthread schedule_do end
+ff=0The pthread schedule_do end///////////////////////线程切换到schedule_do函数里
 
 ff=0
 ff=0
@@ -1522,5 +1527,5 @@ ff=0
 ff=0
 ff=0
 ff=0
-ff=0begin free mem
+ff=0begin free mem////////////////////最后ringfree();释放
 The Server quit!
