@@ -1,0 +1,89 @@
+/mnt # ./rtmp 192.168.1.101
+Server=rtmp://192.168.1.101/live/stream
+url=rtmp://192.168.1.101/live/stream,len1=32
+ERROR: ptr1=(null)
+
+DEBUG: Parsing...
+in RTMP_ParseURL,p1=://192.168.1.101/live/stream
+DEBUG: Parsed protocol: 0
+in RTMP_ParseURL,p2=192.168.1.101/live/stream
+in RTMP_ParseURL,col1=(null)
+in RTMP_ParseURL,slash=/live/stream
+in RTMP_ParseURL,host->av_val1=192.168.1.101/live/stream
+DEBUG: Parsed host    : 192.168.1.101
+slash3 is null
+DEBUG: Parsed app     : live
+ppstart=stream,pplen=6
+has no ?
+ext=ream
+
+subExt=0
+zzzzzzout->av_val=stream,out->av_len=6
+DEBUG: in RTMP_SetupURL,ptr3=(null)
+
+r->Link.tcUrl.av_val=(null),r->Link.tcUrl.av_len=0
+r->Link.tcUrl.av_len is not null
+r->Link.app.av_val=live/stream,r->Link.app.av_len=4
+tcUrl a
+r->Link.tcUrl.av_len=25
+define CRYPTO
+r->Link.lFlags=2, r->Link.swfUrl.av_len=0
+r->Link.swfUrl.av_val=(null),r->Link.SWFSize=0,r->Link.swfAge=30
+sockshost->av_len=0
+r->Link.port =0,r->Link.protocol=0
+bbb r->Link.port =1935,r->Link.protocol=0
+r->m_sb.sb_socket=3
+r->Link.socksport=0
+r->Link.protocol=16
+DEBUG: RTMP_Connect1, ... connected, handshaking
+DEBUG: HandShake: Type Answer   : 03
+DEBUG: HandShake: Server Uptime : 1754980
+DEBUG: HandShake: FMS Version   : 0.0.0.0
+DEBUG: HandShake: Handshaking finished....
+DEBUG: RTMP_Connect1, handshaked
+DEBUG: Invoking connect
+DEBUG: HandleServerBW: server BW = 5000000
+DEBUG: HandleClientBW: client BW = 5000000 2
+DEBUG: HandleChangeChunkSize, received: chunk size change to 4096
+DEBUG: RTMP_ClientPacket, received: invoke 190 bytes
+DEBUG: (object begin)
+DEBUG: (object begin)
+DEBUG: Property: <Name:             fmsVer, STRING:     FMS/3,0,1,123>
+DEBUG: Property: <Name:       capabilities, NUMBER:     31.00>
+DEBUG: (object end)
+DEBUG: (object begin)
+DEBUG: Property: <Name:              level, STRING:     status>
+DEBUG: Property: <Name:               code, STRING:     NetConnection.Connect.Success>
+DEBUG: Property: <Name:        description, STRING:     Connection succeeded.>
+DEBUG: Property: <Name:     objectEncoding, NUMBER:     0.00>
+DEBUG: (object end)
+DEBUG: (object end)
+DEBUG: HandleInvoke, server invoking <_result>
+DEBUG: HandleInvoke, received result for method call <connect>
+DEBUG: Invoking releaseStream
+DEBUG: Invoking FCPublish
+DEBUG: Invoking createStream
+DEBUG: RTMP_ClientPacket, received: invoke 29 bytes
+DEBUG: (object begin)
+DEBUG: Property: NULL
+DEBUG: (object end)
+DEBUG: HandleInvoke, server invoking <_result>
+DEBUG: HandleInvoke, received result for method call <createStream>
+DEBUG: Invoking publish
+DEBUG: RTMP_ClientPacket, received: invoke 105 bytes
+DEBUG: (object begin)
+DEBUG: Property: NULL
+DEBUG: (object begin)
+DEBUG: Property: <Name:              level, STRING:     status>
+DEBUG: Property: <Name:               code, STRING:     NetStream.Publish.Start>
+DEBUG: Property: <Name:        description, STRING:     Start publishing>
+DEBUG: (object end)
+DEBUG: (object end)
+DEBUG: HandleInvoke, server invoking <onStatus>
+DEBUG: HandleInvoke, onStatus: NetStream.Publish.Start
+s32ChnNum = 1
+=============SAMPLE_COMM_VI_SetMipiAttr enWDRMode: 0
+linear mode
+Aptina AR0130 sensor 720P30fps init success!
+
+/mnt # 

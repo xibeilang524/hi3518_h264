@@ -1,0 +1,22 @@
+1.编译zlib库
+cd zlib-1.2.8
+make clean
+make
+
+2.编译openssl库
+cd openssl-1.0.1p
+make clean
+make
+
+3.编译librtmp库
+cd librtmp
+make clean
+make
+
+4.编译rtmp推流程序
+cd rtmp
+make clean
+make
+
+rtmp目录里面编译出来的rtmp这个程序就是最终放到板子上面运行
+

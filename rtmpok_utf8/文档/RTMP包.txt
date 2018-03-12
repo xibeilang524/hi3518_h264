@@ -1,0 +1,90 @@
+http://blog.csdn.net/caoshangpa/article/details/52872146
+http://blog.csdn.net/caoshangpa/article/details/53125949
+http://blog.csdn.net/dittychen/article/details/55509718
+https://www.cnblogs.com/runner42/p/5763820.html	结合数据分析RTMP包
+http://blog.csdn.net/huibailingyu/article/details/42878381	FLV文件结构解析，比较准确
+块格式=块基本的头信息+块消息的头信息+扩展时间戳+块数据
+	1.块基本的头信息=流通道Id+chunk的类型	
+	基本的头信息可能会占(1-3byte)，其中chunk的类型占两位，chunk type决定了后面Message Header的格式
+消息=消息头+载荷
+	消息头=消息类型1byte+载荷长度3byte+时间戳4byte+媒体流ID3byte
+	载荷为H264编码时要用AMF3进行编码
+	
+	消息载荷大的话可分割为多个块载荷 
+	使用librtmp时，解析RTMP地址、握手、建立流媒体链接和AMF编码这块我们都不需要关心，但是数据是如何打
+	包并通过int RTMP_SendPacket(RTMP *r, RTMPPacket *packet, int queue) 函数推送的还是得学习一下。
+	
+	由于RTMP推送的音视频流的封装形式和FLV格式相似，向FMS等流媒体服务器推送H264和AAC直播流时，需要首
+	先发送"AVC sequence header"和"AAC sequence header"这两项数据包含的是重要的编码信息，没有它们，解
+	码器将无法解码），因此这里的"AVC sequence header"就是用来打包sps和pps的。所以要按FLV格式来把H264
+	内容封装成FLV包。而FLV格式如下：
+	FLV=FLVheader+FLVtag(音频流、视频流、脚本流)
+		FLVtag=FLVtag header+FLVtag data(body)
+	
+	RTMP在收发数据的时候并不是以Message为单位的，而是把Message拆分成Chunk发送，而且必须在一个Chunk发
+	送完成之后才能开始发送下一个Chunk。每个Chunk中带有MessageID代表属于哪个Message，接受端也会按照这
+	个id来将chunk组装成Message。 
+	
+
+https://www.cnblogs.com/runner42/p/5763820.html	结合数据分析RTMP包
+http://blog.csdn.net/huibailingyu/article/details/42878381	FLV文件结构解析，比较准确
+FLV=FLVheader(9字节)+FLVbody
+	FLVheader(9字节)：是“FLV”开头的9个字节，一般固定
+	FLVbody=pre_tag_size(4字节,上一个tag的大小)+FLVtag
+		pre_tag_size(4字节,上一个tag的大小):程序好像没用
+		FLVtag：其实就是消息=消息头flvtag header+载荷flvxxxtag///////////////程序里填的就是FLVtag
+			消息头flvtag header=消息类型1byte+载荷长度3byte+时间戳4byte+媒体流ID3byte///////sps,pps、关键帧，非关键帧填的都是一样
+			载荷flvxxxtag：分为flvaudiotag,flvvideotag等，对视频而言就是flvvideotag///////sps,pps、关键帧，非关键帧填的都是不同
+				flvvideotag=flvvideotagheader+flvvideotagbody具体因H264帧不同而不同，见如下分析：
+	
+flvvideotag如下：
+	flvvideotag=flvvideotagheader+flvvideotagbody
+sps0x67,pps0x68封装：
+		载荷flvvideotag
+		看图1的红框1，对sps,pps而言，帧类型为关键帧=1，编码类型为AVC=7,所以output[offset++] = 0x17; //key frame, AVC
+		看图1的红框2，因为CodecID=7,所以要看AVCVIDEOPACKET即图2
+		看图2的红框A，因为现在是sps,pps，所以是AVCPacketType=AVC sequence header=0，output[offset++] = 0x00; //avc sequence header
+		看图2的红框B，因为AVCPacketType=AVC sequence header=0，所以CompositionTime=0,所以output接下来三个都为0
+		看图2的红框C，因为AVCPacketType=AVC sequence header=0，所以要找AVCDecoderConfigurationRecord,即图3
+		看图3，是个表格，看第一行是版本号，填1，所以填output[offset++]=0x01
+		看表格第2-4行填sps,所以output[offset++] = nal[1]; output[offset++] = nal[2]; output[offset++] = nal[3]; 
+		看表格第5行为保留，5位全是1
+		看表格第6行，sps长度，一般为3(11)，与第5行的5位凑成0xff,所以output[offset++] = 0xff;
+		看表格第7行为保留，3位为1
+		看表格第8行为pps个数，一般为1(00001),与第7行凑成0xe1,所以output[offset++] = 0xe1;
+		看表格第9行为sps大小和sps的内容，所以output[offset++] = (uint8_t)(nal_len >> 8);output[offset++] = (uint8_t)(nal_len);
+			sps内容为memcpy(output + offset, nal, nal_len); 
+		然后偏移sps帧的大小offset += nal_len;
+		看表格第10行填pps个数，一般为1，output[offset++] = 0x01; 
+		看表格第11行填pps大小和pps内容，所以output[offset++] = (uint8_t)(nal_len_n >> 8);output[offset++] = (uint8_t)(nal_len_n); 
+			填pps内容memcpy(output + offset, nal_n, nal_len_n);
+		最后发送出去RTMP_Write(rtmp, output, output_len);并标记配置完成rtmp_xiecc->video_config_ok = 1;
+		
+关键帧0x65封装：
+		看图1的红框1，对关键帧0x65而言，帧类型为关键帧=1，编码类型为AVC=7,所以output[offset++] = 0x17; //key frame, AVC
+		看图1的红框2，因为CodecID=7,所以要看AVCVIDEOPACKET即图2
+		看图2的红框A，因为现在是关键帧0x65，所以是AVCPacketType=AVC NALU=1，output[offset++] = 0x01; //avc NALU unit
+		看图2的红框B，因为AVCPacketType=AVC NALU=1，我们不想填时间，所以CompositionTime=0,所以output接下来三个都为0
+		看图2的红框C，因为AVCPacketType=AVC NALU=1，所以要找NALU,而NALU就是4个字节表示NALU长度，后面字节表示NALU内容
+		所以output[offset++] = (uint8_t)(nal_len >> 24); //nal length 
+			output[offset++] = (uint8_t)(nal_len >> 16); //nal length 
+			output[offset++] = (uint8_t)(nal_len >> 8); //nal length 
+			output[offset++] = (uint8_t)(nal_len); //nal length 
+			表示NALU长度
+			memcpy(output + offset, nal, nal_len);表示NALU内容
+		最后发送出去RTMP_Write(rtmp, output, output_len);
+
+非关键帧nal[0] & 0x1f) == 0x01封装：
+		看图1的红框1，对关键帧0x01而言，帧类型为非关键帧=2，编码类型为AVC=7,所以output[offset++] = 0x27;  //not key frame, AVC
+		看图1的红框2，因为CodecID=7,所以要看AVCVIDEOPACKET即图2
+		看图2的红框A，因为现在是非关键帧0x01，还是AVCPacketType=AVC NALU=1，output[offset++] = 0x01; //avc NALU unit
+		看图2的红框B，因为AVCPacketType=AVC NALU=1，我们不想填时间，所以CompositionTime=0,所以output接下来三个都为0
+		看图2的红框C，因为AVCPacketType=AVC NALU=1，所以要找NALU,而NALU就是4个字节表示NALU长度，后面字节表示NALU内容
+		所以output[offset++] = (uint8_t)(nal_len >> 24); //nal length 
+			output[offset++] = (uint8_t)(nal_len >> 16); //nal length 
+			output[offset++] = (uint8_t)(nal_len >> 8); //nal length 
+			output[offset++] = (uint8_t)(nal_len); //nal length 
+			表示NALU长度
+			memcpy(output + offset, nal, nal_len);表示NALU内容
+		最后发送出去RTMP_Write(rtmp, output, output_len);
+	

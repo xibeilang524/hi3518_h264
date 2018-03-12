@@ -1,0 +1,7 @@
+http://blog.csdn.net/lory17/article/details/61916351#进阶
+http://blog.csdn.net/lory17/article/details/61916351
+http://blog.csdn.net/weixin_39371129/article/details/74576960
+http://blog.csdn.net/caoshangpa/article/details/52872146
+rtmp.c里确定tcUrl	printf("tcUrl a\n");
+了解RTMP_HashSWF，SocksSetup函数
+RTMP_Connect0	if (r->Link.socksport)要不要执行
