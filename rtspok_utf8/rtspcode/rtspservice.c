@@ -60,7 +60,7 @@ void PrefsInit()
 	int l;
 	//设置服务器信息全局变量
 	stPrefs.port = SERVER_RTSP_PORT_DEFAULT;
-//gethostname取得主机名字，在开发板上为空，在电脑上为qddytt(主机名)
+//gethostname取得主机名字，在开发板上为空，在电脑上为lucifer(主机名)
 	gethostname(stPrefs.hostname,sizeof(stPrefs.hostname));
 	l=strlen(stPrefs.hostname);
 	if (getdomainname(stPrefs.hostname+l+1,sizeof(stPrefs.hostname)-l)!=0)
