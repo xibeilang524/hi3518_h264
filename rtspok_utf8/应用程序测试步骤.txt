@@ -2,7 +2,7 @@
 
 date 122723002017.30  月日小时分年.秒
 将在PC生成的可执行程序复制到/root/myhi3518code/nfsshare，然后在开发板里用以下命令挂载
-mount -t nfs -o nolock,vers=2 192.168.1.211:/root/myhi3518code/nfsshare /mnt
+mount -t nfs -o nolock,vers=2 192.168.1.199:/root/myhi3518/nfsshare /mnt
 cp myvenc /root/myhi3518code/nfsshare
 在开发板/mnt修改可执行程序的权限chmod +x sample_venc
 运行可执行程序./sample_venc 0
@@ -17,3 +17,5 @@ tftp -g -r sample_vio 192.168.1.101  get remote
 chmod +x sample_venc
 ./sample_venc 0
 tftp -p -l stream_chn0.h264 192.168.1.101  pull local
+
+./rtmp 193.112.75.163

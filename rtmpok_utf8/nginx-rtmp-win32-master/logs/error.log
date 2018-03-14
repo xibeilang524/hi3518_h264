@@ -1,0 +1,242 @@
+2017/11/01 15:49:42 [info] 13684#9400: *4 WSARecv() failed (10053: An established connection was aborted by the software in your host machine), client: 192.168.1.10, server: 0.0.0.0:1935
+2017/11/01 15:49:42 [info] 13684#9400: *4 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2017/11/01 15:49:42 [info] 13684#9400: *4 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2017/11/01 15:49:53 [notice] 13792#13140: worker process 13684 exited with code 40010004
+2018/01/16 09:13:05 [emerg] 6160#6752: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 09:15:13 [emerg] 4684#4184: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 09:15:15 [emerg] 4076#6348: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 14:06:45 [emerg] 7196#5376: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 14:06:49 [emerg] 7868#3068: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 14:10:09 [emerg] 724#8560: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 14:10:11 [emerg] 5332#8800: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 14:10:12 [emerg] 7524#8460: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 14:14:16 [emerg] 7784#8616: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/16 14:15:28 [emerg] 7976#8476: CreateFile() "D:\hi3518\rtmp\AR0130%2BRTMP推流测试文档\AR0130+RTMP推流测试文档\RTMP服务器软件\nginx-rtmp-win32-master/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2018/01/17 22:41:39 [notice] 10264#5628: using the "select" event method
+2018/01/17 22:41:39 [notice] 10264#5628: nginx/1.12.1
+2018/01/17 22:41:39 [info] 10264#5628: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/17 22:41:39 [notice] 10264#5628: start worker processes
+2018/01/17 22:41:39 [notice] 10264#5628: start worker process 12720
+2018/01/17 22:41:39 [notice] 12720#9996: nginx/1.12.1
+2018/01/17 22:41:39 [info] 12720#9996: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/17 22:41:39 [notice] 12720#9996: create thread 9536
+2018/01/17 22:41:39 [notice] 12720#9996: create thread 12556
+2018/01/17 22:41:39 [notice] 12720#9996: create thread 12764
+2018/01/17 22:42:07 [error] 12720#9536: *1 CreateFile() "F:\nginx-rtmp-win32-master/html/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.1.101, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.1.101"
+2018/01/17 22:42:37 [info] 12720#9536: *4 client connected '192.168.1.10'
+2018/01/17 22:42:37 [info] 12720#9536: *4 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/17 22:42:37 [info] 12720#9536: *4 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/17 22:42:37 [info] 12720#9536: *4 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/17 22:42:56 [info] 12720#9536: *5 client connected '192.168.1.101'
+2018/01/17 22:42:56 [info] 12720#9536: *5 connect: app='live' args='' flashver='WIN 22,0,0,209' swf_url='http://192.168.1.101/GrindPlayer.swf' tc_url='rtmp://192.168.1.101:1935/live' page_url='http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream' acodecs=3575 vcodecs=252 object_encoding=3, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/17 22:42:56 [info] 12720#9536: *5 createStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/17 22:42:56 [info] 12720#9536: *5 play: name='stream' args='' start=-2000 duration=-1000 reset=0 silent=0, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/17 22:43:17 [info] 12720#9536: *4 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/17 22:43:17 [info] 12720#9536: *4 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/17 22:43:24 [info] 12720#9536: *5 disconnect, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/17 22:43:24 [info] 12720#9536: *5 deleteStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/23 22:02:43 [notice] 4116#5272: using the "select" event method
+2018/01/23 22:02:43 [notice] 4116#5272: nginx/1.12.1
+2018/01/23 22:02:43 [info] 4116#5272: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/23 22:02:43 [notice] 4116#5272: start worker processes
+2018/01/23 22:02:43 [notice] 4116#5272: start worker process 13628
+2018/01/23 22:02:44 [notice] 13628#7700: nginx/1.12.1
+2018/01/23 22:02:44 [info] 13628#7700: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/23 22:02:44 [notice] 13628#7700: create thread 7588
+2018/01/23 22:02:44 [notice] 13628#7700: create thread 508
+2018/01/23 22:02:44 [notice] 13628#7700: create thread 8364
+2018/01/23 22:03:38 [info] 13628#7588: *2 client connected '192.168.1.10'
+2018/01/23 22:03:38 [info] 13628#7588: *2 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:03:38 [info] 13628#7588: *2 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:03:38 [info] 13628#7588: *2 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:03:44 [info] 13628#7588: *3 client connected '192.168.1.101'
+2018/01/23 22:03:44 [info] 13628#7588: *3 connect: app='live' args='' flashver='WIN 22,0,0,209' swf_url='http://192.168.1.101/GrindPlayer.swf' tc_url='rtmp://192.168.1.101:1935/live' page_url='http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream' acodecs=3575 vcodecs=252 object_encoding=3, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/23 22:03:44 [info] 13628#7588: *3 createStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/23 22:03:44 [info] 13628#7588: *3 play: name='stream' args='' start=-2000 duration=-1000 reset=0 silent=0, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/23 22:03:52 [info] 13628#7588: *2 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:03:52 [info] 13628#7588: *2 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:14:34 [info] 13628#7588: *4 client connected '192.168.1.10'
+2018/01/23 22:14:34 [info] 13628#7588: *4 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:14:34 [info] 13628#7588: *4 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:14:34 [info] 13628#7588: *4 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:14:40 [info] 13628#7588: *4 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:14:40 [info] 13628#7588: *4 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:18:23 [info] 13628#7588: *5 client connected '192.168.1.10'
+2018/01/23 22:18:23 [info] 13628#7588: *5 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:18:23 [info] 13628#7588: *5 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:18:23 [info] 13628#7588: *5 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:18:35 [info] 13628#7588: *5 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:18:35 [info] 13628#7588: *5 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:23:52 [info] 13628#7588: *6 client connected '192.168.1.10'
+2018/01/23 22:23:52 [info] 13628#7588: *6 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:23:52 [info] 13628#7588: *6 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:23:52 [info] 13628#7588: *6 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:24:29 [info] 13628#7588: *6 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 22:24:29 [info] 13628#7588: *6 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:42:54 [info] 13628#7588: *7 client connected '192.168.1.10'
+2018/01/23 23:42:54 [info] 13628#7588: *7 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:42:54 [info] 13628#7588: *7 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:42:54 [info] 13628#7588: *7 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:43:09 [info] 13628#7588: *7 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:43:09 [info] 13628#7588: *7 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:58:56 [info] 13628#7588: *8 client connected '192.168.1.10'
+2018/01/23 23:58:56 [info] 13628#7588: *8 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:58:56 [info] 13628#7588: *8 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:58:56 [info] 13628#7588: *8 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:59:04 [info] 13628#7588: *8 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/23 23:59:04 [info] 13628#7588: *8 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 00:04:23 [info] 13628#7588: *3 disconnect, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/24 00:04:23 [info] 13628#7588: *3 deleteStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/24 21:08:37 [notice] 10816#10004: using the "select" event method
+2018/01/24 21:08:37 [notice] 10816#10004: nginx/1.12.1
+2018/01/24 21:08:37 [info] 10816#10004: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/24 21:08:37 [notice] 10816#10004: start worker processes
+2018/01/24 21:08:37 [notice] 10816#10004: start worker process 9160
+2018/01/24 21:08:38 [notice] 9160#484: nginx/1.12.1
+2018/01/24 21:08:38 [info] 9160#484: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/24 21:08:38 [notice] 9160#484: create thread 6216
+2018/01/24 21:08:38 [notice] 9160#484: create thread 6908
+2018/01/24 21:08:38 [notice] 9160#484: create thread 9912
+2018/01/24 21:13:42 [info] 9160#6216: *1 client connected '192.168.1.10'
+2018/01/24 21:13:42 [info] 9160#6216: *1 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:13:42 [info] 9160#6216: *1 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:13:42 [info] 9160#6216: *1 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:13:50 [info] 9160#6216: *2 client connected '192.168.1.101'
+2018/01/24 21:13:50 [info] 9160#6216: *2 connect: app='live' args='' flashver='WIN 22,0,0,209' swf_url='http://192.168.1.101/GrindPlayer.swf' tc_url='rtmp://192.168.1.101:1935/live' page_url='http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream' acodecs=3575 vcodecs=252 object_encoding=3, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/24 21:13:50 [info] 9160#6216: *2 createStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/24 21:13:50 [info] 9160#6216: *2 play: name='stream' args='' start=-2000 duration=-1000 reset=0 silent=0, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/24 21:13:59 [info] 9160#6216: *1 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:13:59 [info] 9160#6216: *1 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:45:33 [info] 9160#6216: *3 client connected '192.168.1.10'
+2018/01/24 21:45:33 [info] 9160#6216: *3 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:45:33 [info] 9160#6216: *3 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:45:33 [info] 9160#6216: *3 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:45:43 [info] 9160#6216: *3 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 21:45:43 [info] 9160#6216: *3 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/24 23:42:09 [info] 9160#6216: *2 disconnect, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/24 23:42:09 [info] 9160#6216: *2 deleteStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 21:39:37 [notice] 3780#4044: using the "select" event method
+2018/01/25 21:39:37 [notice] 3780#4044: nginx/1.12.1
+2018/01/25 21:39:37 [info] 3780#4044: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 21:39:37 [notice] 3780#4044: start worker processes
+2018/01/25 21:39:37 [notice] 3780#4044: start worker process 13420
+2018/01/25 21:39:38 [notice] 13420#7700: nginx/1.12.1
+2018/01/25 21:39:38 [info] 13420#7700: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 21:39:38 [notice] 13420#7700: create thread 7788
+2018/01/25 21:39:38 [notice] 13420#7700: create thread 2192
+2018/01/25 21:39:38 [notice] 13420#7700: create thread 6084
+2018/01/25 21:41:05 [error] 13420#7788: *1 CreateFile() "F:\nginx-rtmp-win32-master/html/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.1.101, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.1.101"
+2018/01/25 21:41:06 [error] 13420#7788: *1 CreateFile() "F:\nginx-rtmp-win32-master/html/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.1.101, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.1.101"
+2018/01/25 21:45:24 [info] 13420#7788: *2 client connected '192.168.1.10'
+2018/01/25 21:45:24 [info] 13420#7788: *2 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:45:24 [info] 13420#7788: *2 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:45:24 [info] 13420#7788: *2 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:46:16 [info] 13420#7788: *2 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:46:16 [info] 13420#7788: *2 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:46:18 [info] 13420#7788: *4 client connected '192.168.1.10'
+2018/01/25 21:46:18 [info] 13420#7788: *4 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:46:18 [info] 13420#7788: *4 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:46:18 [info] 13420#7788: *4 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:46:44 [notice] 300#3448: signal process started
+2018/01/25 21:46:44 [notice] 3780#4044: exiting
+2018/01/25 21:46:44 [notice] 13420#7700: gracefully shutting down
+2018/01/25 21:46:44 [notice] 13420#2192: exiting
+2018/01/25 21:46:46 [notice] 13148#14248: using the "select" event method
+2018/01/25 21:46:46 [notice] 13148#14248: nginx/1.12.1
+2018/01/25 21:46:46 [info] 13148#14248: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 21:46:46 [notice] 13148#14248: start worker processes
+2018/01/25 21:46:46 [notice] 13148#14248: start worker process 1912
+2018/01/25 21:46:47 [notice] 1912#13720: nginx/1.12.1
+2018/01/25 21:46:47 [info] 1912#13720: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 21:46:47 [notice] 1912#13720: create thread 4852
+2018/01/25 21:46:47 [notice] 1912#13720: create thread 5668
+2018/01/25 21:46:47 [notice] 1912#13720: create thread 9780
+2018/01/25 21:46:49 [notice] 3780#4044: exit
+2018/01/25 21:47:17 [info] 1912#4852: *1 client connected '192.168.1.10'
+2018/01/25 21:47:17 [info] 1912#4852: *1 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:47:17 [info] 1912#4852: *1 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:47:17 [info] 1912#4852: *1 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:47:36 [info] 1912#4852: *1 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:47:36 [info] 1912#4852: *1 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:47:54 [info] 1912#4852: *2 client connected '192.168.1.10'
+2018/01/25 21:47:54 [info] 1912#4852: *2 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:47:54 [info] 1912#4852: *2 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:47:54 [info] 1912#4852: *2 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:49:00 [notice] 7272#13476: signal process started
+2018/01/25 21:49:00 [error] 7272#13476: CreateFile() "F:\nginx-rtmp-win32-master/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/01/25 21:49:32 [notice] 11488#208: using the "select" event method
+2018/01/25 21:49:32 [notice] 11488#208: nginx/1.12.1
+2018/01/25 21:49:32 [info] 11488#208: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 21:49:32 [notice] 11488#208: start worker processes
+2018/01/25 21:49:32 [notice] 11488#208: start worker process 11424
+2018/01/25 21:49:33 [notice] 11424#13012: nginx/1.12.1
+2018/01/25 21:49:33 [info] 11424#13012: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 21:49:33 [notice] 11424#13012: create thread 6068
+2018/01/25 21:49:33 [notice] 11424#13012: create thread 5592
+2018/01/25 21:49:33 [notice] 11424#13012: create thread 5508
+2018/01/25 21:49:50 [info] 1912#4852: *2 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:49:50 [info] 1912#4852: *2 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:49:52 [info] 1912#4852: *3 client connected '192.168.1.10'
+2018/01/25 21:49:52 [info] 1912#4852: *3 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:49:52 [info] 1912#4852: *3 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 21:49:52 [info] 1912#4852: *3 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:04:32 [notice] 9668#9788: using the "select" event method
+2018/01/25 22:04:32 [notice] 9668#9788: nginx/1.12.1
+2018/01/25 22:04:32 [info] 9668#9788: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 22:04:32 [notice] 9668#9788: start worker processes
+2018/01/25 22:04:32 [notice] 9668#9788: start worker process 9892
+2018/01/25 22:04:33 [notice] 9892#7752: nginx/1.12.1
+2018/01/25 22:04:33 [info] 9892#7752: OS: 260200 build:9200, "", suite:300, type:1
+2018/01/25 22:04:33 [notice] 9892#7752: create thread 8568
+2018/01/25 22:04:33 [notice] 9892#7752: create thread 7684
+2018/01/25 22:04:33 [notice] 9892#7752: create thread 9756
+2018/01/25 22:06:48 [info] 9892#8568: *1 client connected '192.168.1.10'
+2018/01/25 22:06:48 [info] 9892#8568: *1 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:06:48 [info] 9892#8568: *1 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:06:48 [info] 9892#8568: *1 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:07:17 [info] 9892#8568: *1 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:07:17 [info] 9892#8568: *1 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:07:45 [info] 9892#8568: *2 client connected '192.168.1.10'
+2018/01/25 22:07:45 [info] 9892#8568: *2 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:07:45 [info] 9892#8568: *2 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:07:45 [info] 9892#8568: *2 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:08:44 [info] 9892#8568: *2 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:08:44 [info] 9892#8568: *2 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:10:18 [info] 9892#8568: *3 client connected '192.168.1.10'
+2018/01/25 22:10:18 [info] 9892#8568: *3 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:10:18 [info] 9892#8568: *3 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:10:19 [info] 9892#8568: *3 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:10:32 [info] 9892#8568: *4 client connected '192.168.1.101'
+2018/01/25 22:10:32 [info] 9892#8568: *4 connect: app='live' args='' flashver='WIN 22,0,0,209' swf_url='http://192.168.1.101/GrindPlayer.swf' tc_url='rtmp://192.168.1.101:1935/live' page_url='http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream' acodecs=3575 vcodecs=252 object_encoding=3, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:10:32 [info] 9892#8568: *4 createStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:10:32 [info] 9892#8568: *4 play: name='stream' args='' start=-2000 duration=-1000 reset=0 silent=0, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:11:17 [info] 9892#8568: *3 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:11:17 [info] 9892#8568: *3 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:12:12 [info] 9892#8568: *4 disconnect, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:12:12 [info] 9892#8568: *4 deleteStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:13:06 [info] 9892#8568: *5 client connected '192.168.1.10'
+2018/01/25 22:13:06 [info] 9892#8568: *5 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:07 [info] 9892#8568: *5 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:07 [info] 9892#8568: *5 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:33 [info] 9892#8568: *5 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:33 [info] 9892#8568: *5 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:51 [info] 9892#8568: *6 client connected '192.168.1.10'
+2018/01/25 22:13:51 [info] 9892#8568: *6 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.1.101/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:51 [info] 9892#8568: *6 createStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:51 [info] 9892#8568: *6 publish: name='stream' args='' type=live silent=0, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:13:56 [info] 9892#8568: *7 client connected '192.168.1.101'
+2018/01/25 22:13:56 [info] 9892#8568: *7 connect: app='live' args='' flashver='WIN 22,0,0,209' swf_url='http://192.168.1.101/GrindPlayer.swf' tc_url='rtmp://192.168.1.101:1935/live' page_url='http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream' acodecs=3575 vcodecs=252 object_encoding=3, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:13:56 [info] 9892#8568: *7 createStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:13:56 [info] 9892#8568: *7 play: name='stream' args='' start=-2000 duration=-1000 reset=0 silent=0, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:14:13 [info] 9892#8568: *6 disconnect, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:14:13 [info] 9892#8568: *6 deleteStream, client: 192.168.1.10, server: 0.0.0.0:1935
+2018/01/25 22:15:03 [info] 9892#8568: *7 disconnect, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:15:03 [info] 9892#8568: *7 deleteStream, client: 192.168.1.101, server: 0.0.0.0:1935
+2018/01/25 22:15:21 [notice] 7112#10568: signal process started
+2018/01/25 22:15:21 [notice] 9668#9788: exiting
+2018/01/25 22:15:21 [notice] 9892#7752: gracefully shutting down
+2018/01/25 22:15:21 [notice] 9892#7684: exiting
+2018/01/25 22:15:21 [notice] 9892#8568: exiting
+2018/01/25 22:15:21 [notice] 9892#7752: exit
+2018/01/25 22:15:21 [notice] 9668#9788: worker process 9892 exited with code 0
+2018/01/25 22:15:21 [notice] 9668#9788: exit

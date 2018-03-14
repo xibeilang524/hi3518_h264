@@ -1,0 +1,9 @@
+# 使用方法
+双击nginx.exe
+# 简要说明
+conf/nginx.conf 为配置文件实例  
+RTMP监听 1935 端口，启用live 和hls 两个application  
+HTTP监听 80 端口，
+* :80/stat 查看stream状态  
+* :80/index.html 为一个直播播放与直播发布测试器
+* :80/vod.html 为一个支持RTMP和HLS的播放器

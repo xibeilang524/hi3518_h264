@@ -1,0 +1,35 @@
+192.168.1.10 [01/Nov/2017:15:49:42 +0800] PUBLISH "live" "stream" "" - 400341210 427 "" "" (27m 18s)
+192.168.1.101 - - [17/Jan/2018:22:42:07 +0800] "GET /favicon.ico HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [17/Jan/2018:22:42:07 +0800] "GET /vod.html HTTP/1.1" 200 2977 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [17/Jan/2018:22:42:07 +0800] "GET /swfobject.js HTTP/1.1" 200 10220 "http://192.168.1.101/vod.html" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [17/Jan/2018:22:42:08 +0800] "GET /ParsedQueryString.js HTTP/1.1" 200 3066 "http://192.168.1.101/vod.html" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [17/Jan/2018:22:42:08 +0800] "GET /GrindPlayer.swf HTTP/1.1" 200 1014231 "http://192.168.1.101/vod.html" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [17/Jan/2018:22:42:10 +0800] "GET /flashlsOSMF.swf HTTP/1.1" 200 89820 "http://192.168.1.101/vod.html" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [17/Jan/2018:22:42:55 +0800] "GET /vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream HTTP/1.1" 200 2977 "http://192.168.1.101/vod.html" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.10 [17/Jan/2018:22:43:17 +0800] PUBLISH "live" "stream" "" - 9640967 409 "" "" (39s)
+192.168.1.101 [17/Jan/2018:22:43:24 +0800] PLAY "live" "stream" "" - 503 5146590 "http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream" "WIN 22,0,0,209" (27s)
+192.168.1.101 - - [23/Jan/2018:22:03:07 +0800] "GET /vod.html HTTP/1.1" 200 2977 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [23/Jan/2018:22:03:42 +0800] "GET /vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream HTTP/1.1" 200 2977 "http://192.168.1.101/vod.html" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.10 [23/Jan/2018:22:03:52 +0800] PUBLISH "live" "stream" "" - 2926736 409 "" "" (14s)
+192.168.1.10 [23/Jan/2018:22:14:40 +0800] PUBLISH "live" "stream" "" - 989609 409 "" "" (6s)
+192.168.1.10 [23/Jan/2018:22:18:35 +0800] PUBLISH "live" "stream" "" - 2490004 409 "" "" (12s)
+192.168.1.10 [23/Jan/2018:22:24:29 +0800] PUBLISH "live" "stream" "" - 9069840 409 "" "" (37s)
+192.168.1.10 [23/Jan/2018:23:43:09 +0800] PUBLISH "live" "stream" "" - 2963398 409 "" "" (14s)
+192.168.1.10 [23/Jan/2018:23:59:04 +0800] PUBLISH "live" "stream" "" - 1186996 409 "" "" (7s)
+192.168.1.101 [24/Jan/2018:00:04:23 +0800] PLAY "live" "stream" "" - 1392 18490603 "http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream" "WIN 22,0,0,209" (2h 0m 39s)
+192.168.1.10 [24/Jan/2018:21:13:59 +0800] PUBLISH "live" "stream" "" - 3465180 409 "" "" (16s)
+192.168.1.10 [24/Jan/2018:21:45:43 +0800] PUBLISH "live" "stream" "" - 1710443 409 "" "" (9s)
+192.168.1.101 [24/Jan/2018:23:42:09 +0800] PLAY "live" "stream" "" - 1530 3632075 "http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream" "WIN 22,0,0,209" (2h 28m 18s)
+192.168.1.101 - - [25/Jan/2018:21:41:05 +0800] "GET /favicon.ico HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [25/Jan/2018:21:41:06 +0800] "GET /favicon.ico HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.101 - - [25/Jan/2018:21:45:31 +0800] "GET /vod.html?src=rtmp%3A%2F%2F192.168.1.100%2Flive%2Fstream HTTP/1.1" 200 2977 "http://192.168.1.101/vod.html" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0"
+192.168.1.10 [25/Jan/2018:21:46:16 +0800] PUBLISH "live" "stream" "" - 13044426 409 "" "" (52s)
+192.168.1.10 [25/Jan/2018:21:47:36 +0800] PUBLISH "live" "stream" "" - 4437259 409 "" "" (19s)
+192.168.1.10 [25/Jan/2018:21:49:50 +0800] PUBLISH "live" "stream" "" - 29573141 409 "" "" (1m 56s)
+192.168.1.10 [25/Jan/2018:22:07:17 +0800] PUBLISH "live" "stream" "" - 7065596 409 "" "" (29s)
+192.168.1.10 [25/Jan/2018:22:08:44 +0800] PUBLISH "live" "stream" "" - 14563663 409 "" "" (59s)
+192.168.1.10 [25/Jan/2018:22:11:17 +0800] PUBLISH "live" "stream" "" - 14742639 409 "" "" (58s)
+192.168.1.101 [25/Jan/2018:22:12:12 +0800] PLAY "live" "stream" "" - 509 11800500 "http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream" "WIN 22,0,0,209" (1m 40s)
+192.168.1.10 [25/Jan/2018:22:13:33 +0800] PUBLISH "live" "stream" "" - 6191899 409 "" "" (26s)
+192.168.1.10 [25/Jan/2018:22:14:13 +0800] PUBLISH "live" "stream" "" - 5043186 409 "" "" (22s)
+192.168.1.101 [25/Jan/2018:22:15:03 +0800] PLAY "live" "stream" "" - 498 4279680 "http://192.168.1.101/vod.html?src=rtmp%3A%2F%2F192.168.1.101%2Flive%2Fstream" "WIN 22,0,0,209" (1m 6s)

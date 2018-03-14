@@ -1,0 +1,21 @@
+开发板不能拼通板子时，拼网关，及电脑拼开发板。若电脑到开发板通，说明电脑防火墙打开了
+
+date 122723002017.30  月日小时分年.秒
+将在PC生成的可执行程序复制到/root/myhi3518code/nfsshare，然后在开发板里用以下命令挂载
+mount -t nfs -o nolock,vers=2 192.168.1.199:/root/myhi3518/nfsshare /mnt
+cp myvenc /root/myhi3518code/nfsshare
+在开发板/mnt修改可执行程序的权限chmod +x sample_venc
+运行可执行程序./sample_venc 0
+将生成的视频文件用命令传到windows上用VLC播放出来tftp -p -l stream_chn0.h264 192.168.1.101
+
+mount tmpfs /tmp -t tmpfs -o size=4m
+t表示类型，也就是要挂载文件系统的类型，表明你要挂载的tmpfs是一个tmpfs文件系统；o表示选项，选项里的
+一个size=100M表示大小是100M，之后就是挂载到/tmp
+tmpfs是内存文件系统，可以减少对flash操作，但掉电不保存，这句话的意思是访问/tmp就是访问内存
+cd /tmp
+tftp -g -r sample_vio 192.168.1.101  get remote
+chmod +x sample_venc
+./sample_venc 0
+tftp -p -l stream_chn0.h264 192.168.1.101  pull local
+
+./rtmp 193.112.75.163
