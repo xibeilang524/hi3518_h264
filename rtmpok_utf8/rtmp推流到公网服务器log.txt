@@ -1,0 +1,214 @@
+
+~ # 
+~ # 
+~ # ls
+~ # pwd
+/root
+~ # cd /
+/ # ls
+bin            init           mkimg.rootfs   root           usr
+boot           ko             mknod_console  sbin           var
+dev            lib            mnt            share
+etc            linuxrc        opt            sys
+home           lost+found     proc           tmp
+/ # date 031419432018.30
+Wed Mar 14 19:43:30 UTC 2018
+/ # mount -t nfs -o nolock,vers=2 192.168.1.199:/root/myhi3518/nfsshare /mnt
+
+
+
+
+
+/ # ls /mnt/
+nfsshare  sdcard
+/ # ls /mnt/nfsshare/
+/ # rm /mnt/nfsshare/
+rm: /mnt/nfsshare: is a directory
+/ # rm /mnt/nfsshare/ -rf
+/ # ls /mnt/
+sdcard
+/ # mount -t nfs -o nolock,vers=2 192.168.1.199:/root/myhi3518/nfsshare /mnt
+PHY: himii:01 - Link is Up - 100/Full
+/ # ls /mnt/
+20180123211610_0.h264  rtmp                   rtsp_utf8
+myvenc_utf8            rtmp_back              stream_chn0.h264
+/ # ./rtmp 193.112.75.163
+-sh: ./rtmp: not found
+/ # cd /mnt/
+/mnt # ls -l
+total 10612
+-rw-r--r--    1 root     root       3010560 Jan 23 13:15 20180123211610_0.h264
+-rwxr-xr-x    1 root     root       1301468 Jan 23 13:10 myvenc_utf8
+-rwxr-xr-x    1 root     root       2660115 Jan 25 14:10 rtmp
+-rwxr-xr-x    1 root     root       2658155 Jan 23 13:57 rtmp_back
+-rwxr-xr-x    1 root     root       1225572 Jan 23 13:11 rtsp_utf8
+-rw-r--r--    1 root     root             0 Jan 25 14:12 stream_chn0.h264
+/mnt # ./rtmp 193.112.75.163
+Server=rtmp://193.112.75.163/live/stream
+url=rtmp://193.112.75.163/live/stream,len1=33
+ERROR: ptr1=(null)
+
+DEBUG: Parsing...
+in RTMP_ParseURL,p1=://193.112.75.163/live/stream
+DEBUG: Parsed protocol: 0
+in RTMP_ParseURL,p2=193.112.75.163/live/stream
+in RTMP_ParseURL,col1=(null)
+in RTMP_ParseURL,slash=/live/stream
+in RTMP_ParseURL,host->av_val1=193.112.75.163/live/stream
+DEBUG: Parsed host    : 193.112.75.163
+slash3 is null
+DEBUG: Parsed app     : live
+ppstart=stream,pplen=6
+has no ?
+ext=ream
+
+subExt=0
+zzzzzzout->av_val=stream,out->av_len=6
+DEBUG: in RTMP_SetupURL,ptr3=(null)
+
+r->Link.tcUrl.av_val=(null),r->Link.tcUrl.av_len=0
+r->Link.tcUrl.av_len is not null
+r->Link.app.av_val=live/stream,r->Link.app.av_len=4
+tcUrl a
+r->Link.tcUrl.av_len=26
+define CRYPTO
+r->Link.lFlags=2, r->Link.swfUrl.av_len=0
+r->Link.swfUrl.av_val=(null),r->Link.SWFSize=0,r->Link.swfAge=30
+sockshost->av_len=0
+r->Link.port =0,r->Link.protocol=0
+bbb r->Link.port =1935,r->Link.protocol=0
+r->m_sb.sb_socket=3
+ERROR: RTMP_Connect0, failed to connect socket. 101 (Network is unreachable)
+connect rtmp://193.112.75.163/live/stream fail
+/mnt # ping 193.112.75.163
+PING 193.112.75.163 (193.112.75.163): 56 data bytes
+ping: sendto: Network is unreachable
+/mnt # ping 192.168.1.1
+PING 192.168.1.1 (192.168.1.1): 56 data bytes
+64 bytes from 192.168.1.1: seq=0 ttl=64 time=0.707 ms
+64 bytes from 192.168.1.1: seq=1 ttl=64 time=0.554 ms
+64 bytes from 192.168.1.1: seq=2 ttl=64 time=0.521 ms
+
+--- 192.168.1.1 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 0.521/0.594/0.707 ms
+/mnt # ping 193.112.75.163
+PING 193.112.75.163 (193.112.75.163): 56 data bytes
+ping: sendto: Network is unreachable
+/mnt # ping 193.112.75.199
+PING 193.112.75.199 (193.112.75.199): 56 data bytes
+ping: sendto: Network is unreachable
+/mnt # ping 192.168.1.199
+PING 192.168.1.199 (192.168.1.199): 56 data bytes
+64 bytes from 192.168.1.199: seq=0 ttl=64 time=6.760 ms
+64 bytes from 192.168.1.199: seq=1 ttl=64 time=3.655 ms
+
+--- 192.168.1.199 ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 3.655/5.207/6.760 ms
+/mnt # route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+192.168.1.0     *               255.255.255.0   U     0      0        0 eth0
+/mnt # route add default gw 192.168.1.1
+/mnt # route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         192.168.1.1     0.0.0.0         UG    0      0        0 eth0
+192.168.1.0     *               255.255.255.0   U     0      0        0 eth0
+/mnt # ping 193.112.75.199
+PING 193.112.75.199 (193.112.75.199): 56 data bytes
+64 bytes from 193.112.75.199: seq=0 ttl=116 time=9.050 ms
+64 bytes from 193.112.75.199: seq=1 ttl=116 time=10.543 ms
+64 bytes from 193.112.75.199: seq=2 ttl=116 time=11.887 ms
+
+--- 193.112.75.199 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 9.050/10.493/11.887 ms
+/mnt # ./rtmp 193.112.75.163    ////////////////////////////////////ÊäÈë¹«ÍøIP
+Server=rtmp://193.112.75.163/live/stream
+url=rtmp://193.112.75.163/live/stream,len1=33
+ERROR: ptr1=(null)
+
+DEBUG: Parsing...
+in RTMP_ParseURL,p1=://193.112.75.163/live/stream
+DEBUG: Parsed protocol: 0
+in RTMP_ParseURL,p2=193.112.75.163/live/stream
+in RTMP_ParseURL,col1=(null)
+in RTMP_ParseURL,slash=/live/stream
+in RTMP_ParseURL,host->av_val1=193.112.75.163/live/stream
+DEBUG: Parsed host    : 193.112.75.163
+slash3 is null
+DEBUG: Parsed app     : live
+ppstart=stream,pplen=6
+has no ?
+ext=ream
+
+subExt=0
+zzzzzzout->av_val=stream,out->av_len=6
+DEBUG: in RTMP_SetupURL,ptr3=(null)
+
+r->Link.tcUrl.av_val=(null),r->Link.tcUrl.av_len=0
+r->Link.tcUrl.av_len is not null
+r->Link.app.av_val=live/stream,r->Link.app.av_len=4
+tcUrl a
+r->Link.tcUrl.av_len=26
+define CRYPTO
+r->Link.lFlags=2, r->Link.swfUrl.av_len=0
+r->Link.swfUrl.av_val=(null),r->Link.SWFSize=0,r->Link.swfAge=30
+sockshost->av_len=0
+r->Link.port =0,r->Link.protocol=0
+bbb r->Link.port =1935,r->Link.protocol=0
+r->m_sb.sb_socket=3
+r->Link.socksport=0
+r->Link.protocol=16
+DEBUG: RTMP_Connect1, ... connected, handshaking
+DEBUG: HandShake: Type Answer   : 03
+DEBUG: HandShake: Server Uptime : 553540
+DEBUG: HandShake: FMS Version   : 0.0.0.0
+DEBUG: HandShake: Handshaking finished....
+DEBUG: RTMP_Connect1, handshaked
+DEBUG: Invoking connect
+DEBUG: HandleServerBW: server BW = 5000000
+DEBUG: HandleClientBW: client BW = 5000000 2
+DEBUG: HandleChangeChunkSize, received: chunk size change to 4096
+DEBUG: RTMP_ClientPacket, received: invoke 190 bytes
+DEBUG: (object begin)
+DEBUG: (object begin)
+DEBUG: Property: <Name:             fmsVer, STRING:     FMS/3,0,1,123>
+DEBUG: Property: <Name:       capabilities, NUMBER:     31.00>
+DEBUG: (object end)
+DEBUG: (object begin)
+DEBUG: Property: <Name:              level, STRING:     status>
+DEBUG: Property: <Name:               code, STRING:     NetConnection.Connect.Success>
+DEBUG: Property: <Name:        description, STRING:     Connection succeeded.>
+DEBUG: Property: <Name:     objectEncoding, NUMBER:     0.00>
+DEBUG: (object end)
+DEBUG: (object end)
+DEBUG: HandleInvoke, server invoking <_result>
+DEBUG: HandleInvoke, received result for method call <connect>
+DEBUG: Invoking releaseStream
+DEBUG: Invoking FCPublish
+DEBUG: Invoking createStream
+DEBUG: RTMP_ClientPacket, received: invoke 29 bytes
+DEBUG: (object begin)
+DEBUG: Property: NULL
+DEBUG: (object end)
+DEBUG: HandleInvoke, server invoking <_result>
+DEBUG: HandleInvoke, received result for method call <createStream>
+DEBUG: Invoking publish
+DEBUG: RTMP_ClientPacket, received: invoke 105 bytes
+DEBUG: (object begin)
+DEBUG: Property: NULL
+DEBUG: (object begin)
+DEBUG: Property: <Name:              level, STRING:     status>
+DEBUG: Property: <Name:               code, STRING:     NetStream.Publish.Start>
+DEBUG: Property: <Name:        description, STRING:     Start publishing>
+DEBUG: (object end)
+DEBUG: (object end)
+DEBUG: HandleInvoke, server invoking <onStatus>
+DEBUG: HandleInvoke, onStatus: NetStream.Publish.Start
+s32ChnNum = 1
+=============SAMPLE_COMM_VI_SetMipiAttr enWDRMode: 0
+linear mode
+Aptina AR0130 sensor 720P30fps init success!
