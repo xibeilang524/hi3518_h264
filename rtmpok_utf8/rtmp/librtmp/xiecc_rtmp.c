@@ -438,13 +438,13 @@ int rtmp_sender_write_video_frame(void *handle,uint8_t *data,int size,uint64_t d
 		nal = get_nal(&nal_len, &buf_offset, buf, total);
 		if (nal == NULL) 
 			break;
-		if (nal[0] == 0x67) //
+		if (nal[0] == 0x67) //打包sps，pps这里没有if (nal[0] == 0x68)，但这里直接处理了两个nal即把nal[0] == 0x68也处理了
 		{
 			if (rtmp_xiecc->video_config_ok > 0) 
 			{
 				continue; //only send video sequence set one time
 			}
-			nal_n  = get_nal(&nal_len_n, &buf_offset, buf, total); //get pps//一般是0x68
+			nal_n  = get_nal(&nal_len_n, &buf_offset, buf, total); //get pps//sps后面一般是紧跟pps 0x68
 			if (nal_n == NULL) 
 			{
 				RTMP_Log(RTMP_LOGERROR, "No Nal after SPS");
@@ -529,7 +529,7 @@ int rtmp_sender_write_video_frame(void *handle,uint8_t *data,int size,uint64_t d
 			continue;
 		}
 
-		if (nal[0] == 0x65)
+		if (nal[0] == 0x65)//打包I帧
 		{
 			body_len = nal_len + 5 + 4; //flv VideoTagHeader +  NALU length
 			output_len = body_len + FLV_TAG_HEAD_LEN + FLV_PRE_TAG_LEN;
@@ -575,7 +575,7 @@ int rtmp_sender_write_video_frame(void *handle,uint8_t *data,int size,uint64_t d
 			continue;
 		}
 
-		if ((nal[0] & 0x1f) == 0x01)
+		if ((nal[0] & 0x1f) == 0x01)//打包其它帧
 		{
 			body_len = nal_len + 5 + 4; //flv VideoTagHeader +  NALU length
 			output_len = body_len + FLV_TAG_HEAD_LEN + FLV_PRE_TAG_LEN;

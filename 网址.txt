@@ -1,0 +1,21 @@
+http://blog.csdn.net/leixiaohua1020/article/details/11822855	RTMPDump源代码分析 0： 主要函数调用分析
+http://blog.csdn.net/leixiaohua1020/article/details/12952977	RTMPdump 源代码分析 1： main()函数	里面包含一系列分析
+https://www.baidu.com/link?url=Li7iKABgtrRFrRH3G75Yi9-fYf0XNh88ddNPg0SRmGWra73WIiAEl4-LfAkGhoDePwGXAe661HpsYzeSwvawV_&wd=&eqid=b1075bc100012c8e000000065a616bda
+RTMPDump源代码分析https://www.bbsmax.com/A/kPzO2Ooadx/
+
+http://blog.csdn.net/leixiaohua1020/article/details/11704355	RTMP流媒体播放过程
+http://blog.csdn.net/leixiaohua1020/article/details/11694129	RTMP规范简单分析
+
+
+https://obsproject.com/download，https://obsproject.com/mantis/，https://obsproject.com/ OBS直播官网
+bilibi的直播客户端https://github.com/Bilibili/biliobs
+阿里巴巴的千牛主播https://github.com/alibaba/tblive
+bilibi的直播客户端，阿里巴巴的千牛主播都是基于OBS
+OBS基于VS2010但运行有点问题：https://sourceforge.net/projects/obsproject/files/latest/download，https://sourceforge.net/projects/obsproject/
+网友研究OBS的网站：https://github.com/jp9000/obs-studio
+
+阿里巴巴开源项目集合：https://github.com/alibaba
+bilibili开源项目集合：https://github.com/Bilibili
+腾讯开源项目集合：https://github.com/tencent
+
+https://opencv.org/    tensorflow到时选一个深入
